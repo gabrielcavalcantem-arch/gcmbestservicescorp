@@ -1,0 +1,96 @@
+# GCM Best Services Corp — redirecionamentos 301 do site antigo (WordPress/Manus) para o site atual
+# Gerado em 31/10/2026 a partir do relatório "Não encontrado (404)" do Search Console (69 URLs)
+# Hostinger (LiteSpeed) lê este arquivo em public_html. Manter no topo de qualquer .htaccess existente.
+
+RewriteEngine On
+
+# --- HTTPS + sem www (canônico) ---
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://gcmbestservicescorp.com/$1 [L,R=301]
+
+# --- Páginas institucionais antigas ---
+Redirect 301 /home/ /
+Redirect 301 /reviews/ /about/
+Redirect 301 /privacy-policy/ /terms-conditions/
+Redirect 301 /_preview/ /
+
+# --- Serviços antigos -> serviços atuais ---
+Redirect 301 /services/pavers /pavers/
+Redirect 301 /pavers-orlando /pavers/
+Redirect 301 /pavers-orlando/ /pavers/
+Redirect 301 /concrete-orlando /concrete/
+Redirect 301 /concrete-orlando/ /concrete/
+Redirect 301 /services/outdoor-living /patios/
+Redirect 301 /hardscape/ /pavers/
+Redirect 301 /hardscaping/ /pavers/
+Redirect 301 /brick-paver-hardscape/ /pavers/
+Redirect 301 /epoxy-coating/ /concrete/
+Redirect 301 /services/epoxy/st-cloud /concrete/
+Redirect 301 /services/epoxy/davenport /concrete/
+Redirect 301 /services/epoxy/kissimmee /concrete/
+Redirect 301 /services/concrete/davenport /concrete/
+
+# --- Cidades antigas -> áreas atuais ---
+Redirect 301 /locations/kissimmee /areas/kissimmee/
+Redirect 301 /locations/davenport /areas/celebration/
+Redirect 301 /locations/four-corners /areas/celebration/
+Redirect 301 /locations/clermont /areas/horizon-west/
+Redirect 301 /locations/melbourne /artificial-turf/
+Redirect 301 /hardscape-in-kissimmee-fl/ /paver-patio-kissimmee/
+Redirect 301 /artificial-turf-in-orlando-fl/ /artificial-turf/
+Redirect 301 /artificial-turf-in-kissimmee-fl/ /artificial-turf/
+Redirect 301 /artificial-turf-in-melbourne-fl/ /artificial-turf/
+Redirect 301 /artificial-turf-in-lakeland-fl/ /artificial-turf/
+Redirect 301 /driveway-patio-paving-in-lakeland-fl/ /paver-driveway-orlando/
+
+# --- Blog antigo -> artigos equivalentes do blog atual ---
+Redirect 301 /blog/pavers-vs-concrete-driveway-florida/ /blog/paver-vs-poured-concrete-driveway/
+Redirect 301 /blog/pavers-vs-concrete-driveway-florida /blog/paver-vs-poured-concrete-driveway/
+Redirect 301 /blog/paver-installation-cost-orlando/ /blog/paver-driveway-cost-factors/
+Redirect 301 /blog/paver-installation-cost-orlando /blog/paver-driveway-cost-factors/
+Redirect 301 /blog/concrete-driveway-maintenance /blog/paver-sealing-maintenance-guide/
+Redirect 301 /when-why-how-use-polymeric-sand-pavers/ /blog/paver-sealing-maintenance-guide/
+Redirect 301 /paver-edging-options-prevent-shifting/ /blog/luxury-paver-patterns-borders/
+Redirect 301 /managing-expansion-gaps-brick-paver-installation/ /blog/how-long-do-pavers-last-florida/
+Redirect 301 /integrating-outdoor-kitchens-with-brick-pavers/ /blog/luxury-summer-kitchen-design/
+Redirect 301 /integrate-outdoor-lighting-pavers-turf-design/ /blog/architectural-outdoor-lighting-ideas/
+Redirect 301 /eight-lighting-controls-hoa-approved-enclosures/ /blog/architectural-outdoor-lighting-ideas/
+Redirect 301 /choose-right-drainage-slope-driveway/ /blog/driveway-drainage-florida/
+Redirect 301 /artificial-turf-drainage-florida-solutions/ /blog/artificial-turf-vs-natural-grass-luxury/
+Redirect 301 /automatic-irrigation-solutions-artificial-turf-lawns/ /blog/artificial-turf-vs-natural-grass-luxury/
+Redirect 301 /artificial-turf-care-pet-odor-control-tips/ /blog/artificial-turf-vs-natural-grass-luxury/
+Redirect 301 /choose-right-concrete-mix-florida-soils/ /concrete/
+Redirect 301 /faster-concrete-curing-tips-florida/ /concrete/
+Redirect 301 /prevent-cracks-florida-concrete-patio-driveway/ /blog/pavers-vs-stamped-concrete/
+Redirect 301 /identify-treat-scaling-florida-concrete-surfaces/ /blog/pavers-vs-stamped-concrete/
+Redirect 301 /stop-doing-this-cleaning-outdoor-concrete-surfaces/ /blog/paver-sealing-maintenance-guide/
+Redirect 301 /repaint-exterior-concrete-fresh-bold-look/ /concrete/
+Redirect 301 /concrete-permit-inspections-guide/ /blog/luxury-hardscape-project-timeline/
+Redirect 301 /concrete-permit-inspections-guide/feed/ /blog/luxury-hardscape-project-timeline/
+Redirect 301 /renters-hoa-rules-patio-changes/ /blog/how-to-plan-outdoor-living-space/
+Redirect 301 /retrofit-outdoor-surfaces-wheelchair-access/ /blog/how-to-plan-outdoor-living-space/
+Redirect 301 /conceal-utility-conduits-patio-designs/ /blog/how-to-plan-outdoor-living-space/
+Redirect 301 /prevent-hvac-condensation-keep-patios-dry/ /blog/how-to-plan-outdoor-living-space/
+Redirect 301 /safely-pressure-wash-screen-enclosures-pool-cages/ /blog/luxury-pool-deck-design-ideas/
+Redirect 301 /safely-pressure-wash-screen-enclosures-pool-cages/feed/ /blog/luxury-pool-deck-design-ideas/
+Redirect 301 /garage-storage-ideas-with-epoxy-floors-2026/ /concrete/
+Redirect 301 /blog/dimensionamento-correto-laje-pisos-externos/ /pt/
+Redirect 301 /blog/rejuntes-policmericos-aplicacao-correta-para-evitar-erosao/ /pt/
+Redirect 301 /blog/evitar-manchas-folhas-resina-pisos-garagem/ /pt/
+Redirect 301 /blog/cura-quimica-ou-umida-pisos-concreto/ /pt/
+Redirect 301 /blog/hello-world/ /blog/
+
+# --- Restos de WordPress (categorias, feeds, wp-*) -> blog / home ---
+Redirect 301 /category/concrete/ /blog/
+Redirect 301 /category/hardscaping/ /blog/
+Redirect 301 /category/permits-hoa-codes/ /blog/
+Redirect 301 /blog/feed/ /blog/
+Redirect 301 /blog/comments/feed/ /blog/
+RedirectMatch 301 ^/blog/wp-.*$ /blog/
+RedirectMatch 301 ^/wp-.*$ /
+RedirectMatch 301 ^/feed/?$ /blog/
+RedirectMatch 301 ^/(.+)/feed/?$ /$1/
+
+# --- 404 bonito para o que sobrar ---
+ErrorDocument 404 /404.html
